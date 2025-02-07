@@ -6,7 +6,7 @@ Using this Application user can SignUp & SignIn(using JWT auth), user can add bl
 
 ## Author
 
-- [@Animesh7853](https://www.github.com/Animesh7853)
+- [@Animesh7853](https://www.github.com/Animesh7853),[@Kanav Nijhawan](https://github.com/kanav03)
 
 
 ## Environment Variables
@@ -23,7 +23,7 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://github.com/Animesh7853/Vichaar
+  git clone https://github.com/kanav03/Vichaar
 ```
 
 Go to the project directory

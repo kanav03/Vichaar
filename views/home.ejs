@@ -1,0 +1,59 @@
+<%- include('./partials/head') %>
+  <title>Homepage</title>
+  </head>
+
+  <body>
+    <%- include('./partials/nav') %>
+
+      
+    <main class="mb-auto" style="flex: 1 0 auto;">
+      <div class="container mt-3 ">
+        <div class="row row-col-4">
+          <% allBlogs.forEach(blog=> { %> <!-- Change allBlog to allBlogs -->
+            <div class="col">
+              <div class="card mt-3" style="width: 18rem;">
+                <img src="<%= blog.coverImageURL %>" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <%= blog.title %>
+                  </h5>
+
+                  <a href="/blog/<%= blog._id %>" class="btn btn-primary">Read</a>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+        </div>
+
+      </div>
+      <footer class="footer mt-3 py-3 bg-dark text-white text-center ">
+        <div class="container">
+          <span class="text-muted">&copy; Vichaar blogging platform Inc</span>
+          <div class="d-flex justify-content-center">
+            <div class="p-2">
+              <h5>Animesh</h5>
+              <a href="https://www.instagram.com/animesh" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/animesh" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/animesh" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="p-2">
+              <h5>Kanav</h5>
+              <a href="https://www.instagram.com/kanav" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/kanav" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/kanav" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="p-2">
+              <h5>Abhinav</h5>
+              <a href="https://www.instagram.com/abhinav" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/abhinav" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/abhinav" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <span class="text-white">&copy; 2024 Vichaar blogging. All rights reserved.</span>
+        </div>
+      </footer>
+      <%- include('./partials/scripts') %>
+    </main>
+  </body>
+
+  </html>
